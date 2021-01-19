@@ -14,6 +14,16 @@
 
 </div>
 
+## jsundra's Fork
+I like type safety & IDE intellisense. 
+
+Mithril.js has a split Component/Vnode relationship, so a JSX.ElementAttributesProperty interface can't be used to define Attrs types.
+The TypeScript Compiler has a fallback to check the type of the first argument in a JSX class' constructor.
+
+To that end, and to provide as few library changes as possible, this fork adds a little script to generate a useless constructor in all construct-ui components' `*.d.ts` files.
+
+To run, after building the base repo, run `npx ts-node add-constructors.ts`.
+
 ## Documentation
 Check out the [documentation website](https://vrimar.github.io/construct-ui) for installation instructions and getting started.
 
